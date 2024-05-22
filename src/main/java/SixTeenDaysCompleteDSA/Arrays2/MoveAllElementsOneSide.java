@@ -21,7 +21,9 @@ public class MoveAllElementsOneSide {
             while(arr[end]>=0){
                 end--;
             }
-            swap(start,end,arr);
+            if(start<=end){
+                swap(start,end,arr);
+            }
         }
     }
 
